@@ -1,0 +1,48 @@
+@keyframes moveright{
+    0%{
+        transition-delay: 2s;
+        background-color: bisque;
+        width: 100px;
+        height: 100px;
+    }
+
+    33%{
+        background-color: yellow;
+        border-radius: 0;
+        transform: translateX(400px) ;
+    }
+
+    55%{
+        border-radius: 0;
+        transition-delay: 3ms;
+        transform: translateX(400px) translateY(500px) ;
+    }
+
+    66%{
+        border-radius: 50%;
+        transform: translateX(400px) translateY(500px) rotate(200deg) ;
+        border-style: dotted;
+        border: 2px solid brown;
+    }
+
+    67%{
+        transform: translateX(-400px) translateY(400px) ;
+        transition-timing-function: ease-in-out;
+    }
+
+}
+
+
+
+#level1{
+    margin: 10% auto;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(247, 193, 32);
+
+
+    animation-delay: 2ms;
+    animation-name: moveright;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
